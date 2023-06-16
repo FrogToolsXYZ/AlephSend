@@ -1,0 +1,62 @@
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    -webkit-tap-highlight-color: transparent;
+
+    --primary: 39 174 96;
+    --primary-contrast: #ffffff;
+    --secondary: 0 184 148;
+    --secondary-contrast: #ffffff;
+
+    --text-primary: 0 0 0 / 0.87;
+    --text-secondary: 0 0 0 / 0.6;
+    --text-disabled: 0 0 0 / 0.38;
+
+    --action-active: 0 0 0 / 0.54;
+    --action-active-opacity: 24%;
+    --action-hover: 0 0 0 / 16%;
+    --action-hover-opacity: 16%;
+    --action-selected: 0 0 0 / 8%;
+    --action-selected-opacity: 8%;
+    --action-disabled: 0 0 0 / 26%;
+    --action-disabled-opacity: 38%;
+    --action-disabled-background: 0 0 0 / 12%;
+    --action-focus: 0 0 0 / 24%;
+    --action-focus-opacity: 24%;
+
+    --divider: 0 0 0 / 0.12;
+  }
+
+  :root[data-mode="dark"] {
+    color-scheme: dark;
+
+    --primary: 39 174 96;
+    --primary-contrast: #000000;
+    --secondary: 211 211 211;
+    --secondary-contrast: #000000;
+
+    --text-primary: #ffffff;
+    --text-secondary: 255 255 255 / 0.7;
+    --text-disabled: 255 255 255 / 0.5;
+
+    --action-active: #ffffff;
+    --action-active-opacity: 24%;
+    --action-hover: 255 255 255 / 16%;
+    --action-hover-opacity: 16%;
+    --action-selected: 255 255 255 / 16%;
+    --action-selected-opacity: 8%;
+    --action-disabled: 255 255 255 / 30%;
+    --action-disabled-opacity: 38%;
+    --action-disabled-background: 255 255 255 / 12%;
+    --action-focus: 255 255 255 / 24%;
+    --action-focus-opacity: 24%;
+
+    --divider: 255 255 255 / 0.12;
+  }
+}
