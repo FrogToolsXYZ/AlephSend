@@ -14,7 +14,7 @@ export const metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.className} data-mode="dark">
-      <body className="flex min-h-screen min-w-full flex-col bg-white text-black dark:bg-[#151514] dark:text-white">
+      <body className="flex min-h-screen min-w-full flex-col bg-white text-black dark:bg-[#111b24] dark:text-white">
         <AppProviders>
           <header className="container mx-auto flex w-full max-w-screen-lg items-center justify-between px-4 py-5">
             <Link href="/" prefetch={false}>
